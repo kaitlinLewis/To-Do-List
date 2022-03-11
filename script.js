@@ -20,3 +20,4 @@ function addUserTextToList(){
 document.querySelector("#submit").addEventListener("click", addUserTextToList);
 
 // Hey guys this is videet lets complete this whenever you get time. feel free to edit and fiddle around.
+// Update: it works!!!!! Now to just get it to cross off done tasks...
