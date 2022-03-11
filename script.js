@@ -1,20 +1,9 @@
-function enterUserInput(){
-  let submitUserInput = document.querySelector().addEventListener("click", addUserListToPage);
-}
+let inputs = document.querySelectorAll("input[type=text]");
 
-function userInputLength(){
-    return inputs.length
-  }
-      
-  function addUserListToPage(){
-    if (userInputLength > 0) {
-      createUserInputList()
-    }
-  }
-
+// Creates list of user inputs
 function createUserInputList(list){
     let text = "";
-    let inputs = document.querySelectorAll("input[type=text]");
+    
     for (let i = 0; i < inputs.length; i++) {
         text += inputs[i].value;
     }
@@ -26,4 +15,19 @@ function createUserInputList(list){
   
   
     }
-    
+// User enters info and hits submit
+function enterUserInput(){
+  let submitUserInput = document.querySelector("#submit").addEventListener("click", addUserListToPage);
+}
+
+// determines that the user has entered data
+function userInputLength(){
+    return inputs.length
+  }
+
+// When user has entered info, will create list      
+  function addUserListToPage(){
+    if (userInputLength > 0) {
+      createUserInputList()
+    }
+  }
