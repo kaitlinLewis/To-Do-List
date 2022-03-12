@@ -21,3 +21,6 @@ document.querySelector("#submit").addEventListener("click", addUserTextToList);
 
 // Hey guys this is videet lets complete this whenever you get time. feel free to edit and fiddle around.
 // Update: it works!!!!! Now to just get it to cross off done tasks...
+
+//Tony (March 11th @ 6PM CDT): Nice work! Should we add media query for responsive design on mobile? 
+// maybe collapse or align completed tasks? - Tony
